@@ -18,15 +18,9 @@
         <item name="android:navigationBarColor">@color/dark_teal</item>
 
         <item name="android:windowBackground">@color/bg1</item>
-        <item name="colorAccent">@color/dark_teal</item>
+        <item name="android:colorAccent">@color/dark_teal</item>
         <item name="android:textColor">@android:color/black</item>
-    </style>
-
-
-    <style name="OldStyleButton_light" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/bg1</item>
-        <item name="android:textColor">#FFFFFF</item>
-        <!-- Add any other attributes you want to customize -->
+        <item name="android:fontFamily">@font/inter</item>
     </style>
 
 </resources>
