@@ -4,7 +4,9 @@
     <color name="white">#FFFFFFFF</color>
 
 
-    <color name="dark_teal">#1F555F</color>
+    <color name="teal">#1F555F</color>
+    <color name="teal2">#2C7785</color>
+    <color name="teal3">#0B9E8F</color>
 
     <color name="bg1">#DDE9F1</color> <!-- primary bg -->
     <color name="bg2">#B9D2E2</color> <!-- darker bg -->

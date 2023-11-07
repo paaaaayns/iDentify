@@ -7,18 +7,18 @@
 
     <style name="Theme.IDentify" parent="Base.Theme.IDentify" >
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/dark_teal</item>
+        <item name="colorPrimary">@color/teal</item>
         <item name="colorPrimaryVariant">@color/bg1</item>
         <item name="colorOnPrimary">@color/white</item>
 
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/dark_teal</item>
+        <item name="android:statusBarColor">@color/teal</item>
 
         <!-- Customize your theme here. -->
-        <item name="android:navigationBarColor">@color/dark_teal</item>
+        <item name="android:navigationBarColor">@color/teal</item>
 
         <item name="android:windowBackground">@color/bg1</item>
-        <item name="android:colorAccent">@color/dark_teal</item>
+        <item name="android:colorAccent">@color/teal</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:fontFamily">@font/inter</item>
     </style>
