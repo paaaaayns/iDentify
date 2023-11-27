@@ -4,87 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginTop="100dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
+        android:src="@drawable/logo1"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/logo"
-            app:tint="@color/teal" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/anton_regular"
-            android:gravity="center"
-            android:letterSpacing="0.2"
-            android:text="iDentify"
-            android:textColor="@color/teal"
-            android:textSize="36dp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginBottom="-50dp"
-        android:src="@drawable/intersect1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:tint="@color/bg2" />
-
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginBottom="-150dp"
-        android:src="@drawable/intersect1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:tint="@color/bg3" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginBottom="-250dp"
-        android:src="@drawable/intersect1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/teal" />
 
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
         android:layout_marginBottom="70dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnLogIn"
+            android:id="@+id/btnLogin"
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="170dp"
             android:layout_height="55dp"
@@ -98,7 +47,6 @@
             android:textStyle="bold"
             app:backgroundTint="@color/bg1"
             app:cornerRadius="10dp" />
-
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSignUp"
@@ -116,8 +64,6 @@
             app:cornerRadius="10dp"
             app:strokeColor="@color/bg1"
             app:strokeWidth="2dp" />
-
-
     </LinearLayout>
 
     <TextView
