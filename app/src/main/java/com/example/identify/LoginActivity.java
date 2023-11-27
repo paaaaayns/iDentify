@@ -6,30 +6,59 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
+import android.widget.ImageView;
 
 public class LoginActivity extends AppCompatActivity {
 
-    TextInputLayout layoutEmail, layoutPassword;
-    TextInputEditText edtEmail, edtPassword;
+    ImageView btnBack;
+
+    Button btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        btnLogin = findViewById(R.id.btnLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                redirectActivity(HomeActivity.class);
+                finish();
+            }
+        });
 
-        layoutEmail = findViewById(R.id.layoutEmail);
-        edtEmail = findViewById(R.id.edtEmail);
-        layoutPassword = findViewById(R.id.layoutPassword);
-        edtPassword = findViewById(R.id.edtPassword);
 
 
 
 
 
+
+        btnBack = findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                redirectActivity(MainActivity.class);
+                finish();
+            }
+        });
+
+
+
+
+
+    }
+
+    public void redirectActivity(Class secondActivity) {
+        Intent intent = new Intent(getApplicationContext(), secondActivity);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_down_in, R.anim.slide_down_out);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.slide_down_in, R.anim.slide_down_out);
     }
 
 
